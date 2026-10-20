@@ -1,0 +1,13 @@
+{
+  "name": "ai-course-builder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beginner-friendly AI Course Builder prototype",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n SERVER,CLIENT -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
